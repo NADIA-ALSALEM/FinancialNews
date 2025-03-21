@@ -4,3 +4,7 @@ scikit-learn
 joblib
 numpy
 pandas
+fastapi
+uvicorn
+wordcloud
+matplotlib
