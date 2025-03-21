@@ -124,24 +124,24 @@ print(prediction)
 
 !pip install fastapi uvicorn
 
-# Commented out IPython magic to ensure Python compatibility.
-# %%writefile app.py
-# from fastapi import FastAPI
-# import joblib
-# 
-# # إنشاء تطبيق FastAPI
-# app = FastAPI()
-# 
-# # تحميل النموذج والمتجهات
-# model = joblib.load('logistic_regression_model.pkl')
-# tfidf = joblib.load('tfidf_vectorizer.pkl')
-# 
-# # تعريف مسار API
-# @app.post("/predict")
-# def predict(text: str):
-#     text_tfidf = tfidf.transform([text])
-#     prediction = model.predict(text_tfidf)
-#     return {"prediction": prediction[0]}
+Commented out IPython magic to ensure Python compatibility.
+%%writefile app.py
+from fastapi import FastAPI
+import joblib
+
+# إنشاء تطبيق FastAPI
+app = FastAPI()
+
+# تحميل النموذج والمتجهات
+model = joblib.load('logistic_regression_model.pkl')
+tfidf = joblib.load('tfidf_vectorizer.pkl')
+
+# تعريف مسار API
+@app.post("/predict")
+def predict(text: str):
+    text_tfidf = tfidf.transform([text])
+    prediction = model.predict(text_tfidf)
+    return {"prediction": prediction[0]}
 
 
 
