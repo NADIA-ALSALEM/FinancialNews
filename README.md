@@ -51,3 +51,6 @@ To run this application locally, follow these steps:
    ```bash
    git clone https://github.com/NADIA-ALSALEM/FinancialNews.git
    cd financial-news-classification
+![Screenshot 2025-03-21 163831](https://github.com/user-attachments/assets/0f7f8acc-7d44-4146-a5e0-115f46e25182)
+![Screenshot 2025-03-21 163916](https://github.com/user-attachments/assets/d7974a5d-42d2-4b25-8dd8-068fc26b1341)
+
